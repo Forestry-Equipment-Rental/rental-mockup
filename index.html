@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/login.css">
 </head>
+
 <body>
     <div class="container mt-5">
         <!-- システムのタイトル -->
@@ -21,18 +23,18 @@
                 <label for="userId">ＩＤ</label>
                 <input type="text" class="form-control" id="userId" placeholder="ユーザーIDを入力">
             </div>
-            
+
             <!-- PSW入力フィールド -->
             <div class="form-group">
                 <label for="password">ＰＳＷ</label>
                 <input type="password" class="form-control" id="password" placeholder="パスワードを入力">
             </div>
-            
+
             <!-- 立場選択ラジオボタン -->
             <div class="mb-3">
                 <label>貸出者／利用者の立場選択</label>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="role" id="lender" value="lender">
+                    <input class="form-check-input" type="radio" name="role" id="lender" value="lender" checked>
                     <label class="form-check-label" for="lender">
                         貸出者
                     </label>
@@ -45,29 +47,32 @@
                 </div>
             </div>
 
-            <!-- ログインボタン -->
-            <button type="submit" class="btn btn-primary mb-2">ログイン</button>
+            <div class="justify-content-center">
+                <!-- ログインボタン -->
+                <button type="button" class="btn btn-primary" onclick="goToMain()">ログイン</button>
 
-            <!-- 機能選択ボタン（ダミー） -->
-            <button type="button" class="btn btn-secondary" onclick="goToMain()">機能選択</button>
+                <!-- 機能選択ボタン（ダミー） -->
+                <!-- <button type="button" class="btn btn-secondary" onclick="goToMain()">機能選択</button> -->
+            </div>
         </form>
     </div>
 
     <script>
         function goToMain() {
-          if (document.getElementById('lender').checked) {
-            window.location.href = 'lender.html';
-          } else if (document.getElementById('borrower').checked) {
-            window.location.href = 'borrower.html';
-          } else {
-            alert('機能選択は未実装です。')
-          }
+            if (document.getElementById('lender').checked) {
+                window.location.href = 'lender.html';
+            } else if (document.getElementById('borrower').checked) {
+                window.location.href = 'borrower.html';
+            } else {
+                alert('機能選択は未実装です。')
+            }
         }
-      </script>
+    </script>
 
     <!-- Bootstrap JS の読み込み -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>林業機器相互レンタルシステム | 借入希望期間入力</title>
+    <!-- Bootstrap CSS の読み込み -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <!-- システムのタイトル -->
+      <h1 class="text-center mb-4">林業機器相互レンタルシステム</h1>
+      <h2 class="text-center mb-4">借入希望期間入力</h2>
+
+      <form>
+        <div class="form-group">
+          <label for="business name">事業者名 : </label>
+          <label for="business name ex">貸出レンタル機器照会</label>
+        </div>
+
+        <div class="form-group">
+          <label for="borrow period start date">借入希望期間開始日</label>
+          <input
+            type="date"
+            class="form-control"
+            id="k-borrow-period-start"
+            placeholder="借入希望期間開始日"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="borrow period end date">借入希望期間終了日</label>
+          <input
+            type="date"
+            class="form-control"
+            id="k-borrow-period-end"
+            placeholder="借入希望期間終了日"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="classification code">借入希望一覧 </label>
+          <div class="form-group pl-3">
+            <button type="button" class="btn btn-secondary">機器分類</button>
+            <input
+              type="number"
+              class="form-control mt-3"
+              id="k-desired borrow numbeer"
+              placeholder="借入希望台数"
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <button
+            type="button"
+            class="btn btn-primary"
+          >
+          登録
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Bootstrap JS の読み込み -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

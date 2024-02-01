@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>林業機器相互レンタルシステム | 貸出レンタル機器照会</title>
+    <!-- Bootstrap CSS の読み込み -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <!-- システムのタイトル -->
+      <h1 class="text-center mb-4">林業機器相互レンタルシステム</h1>
+      <h2 class="text-center mb-4">貸出レンタル機器照会</h2>
+
+      <form>
+        <div class="form-group">
+          <label for="business name">事業者名 : </label>
+          <label for="business name ex">貸出レンタル機器照会</label>
+        </div>
+
+        <div class="form-group">
+          <label for="classification code">大分類 </label>
+          <div class="form-group pl-3">
+            <label for="classification code ex">Code : </label>
+            <label for="classification code ex">major code</label>
+            <br />
+            <label for="classification code ex">Name : </label>
+            <label for="classification code ex">major name</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="classification code">中分類 </label>
+          <div class="form-group pl-3">
+            <label for="classification code ex">Code : </label>
+            <label for="classification code ex">medium code</label>
+            <br />
+            <label for="classification code ex">Name : </label>
+            <label for="classification code ex">medium name</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="classification code">小分類 </label>
+          <div class="form-group pl-3">
+            <label for="classification code ex">Code : </label>
+            <label for="classification code ex">small code</label>
+            <br />
+            <label for="classification code ex">Name : </label>
+            <label for="classification code ex">small name</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="rental equipment number">レンタル機器番号 : </label>
+          <label for="rental equipment number ex">789652</label>
+        </div>
+
+        <div class="form-group">
+          <label for="rental equipment name">レンタル機器名称 : </label>
+          <label for="rental equipment name ex">Tree Cut Tool</label>
+        </div>
+
+        <div class="form-group">
+          <label for="rental equipment name">貸出状況一覧</label>
+          <div class="form-group pl-3">
+            <label for="貸出可能期間期間">貸出可能期間期間 : </label>
+            <label for="貸出可能期間期間 ex">lending period</label>
+            <br />
+            <label for="レンタル申込期間">レンタル申込期間 : </label>
+            <label for="レンタル申込期間 ex">rental application period</label>
+            <br />
+            <label for="貸出料金">貸出料金 : </label>
+            <label for="貸出料金 %">7%</label>
+            <br />
+            <label for="ステイタス">ステイタス : </label>
+            <label for="ステイタス ex">Approved</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <button
+            type="button"
+            class="btn btn-primary"
+            onclick="goToRentalEquipmentInquiry()"
+          >
+            レンタル機器詳細
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      function goToRentalEquipmentInquiry() {
+        confirm("you wanna leave?");
+      }
+    </script>
+
+    <!-- Bootstrap JS の読み込み -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

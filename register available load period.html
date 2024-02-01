@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>林業機器相互レンタルシステム | 貸出可能期間登録</title>
+    <!-- Bootstrap CSS の読み込み -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <!-- システムのタイトル -->
+        <h1 class="text-center mb-4">林業機器相互レンタルシステム</h1>
+        <h2 class="text-center mb-4">貸出可能期間登録</h2>
+
+        <form>
+            <div class="form-group">
+                <label for="business name">事業者名 : </label>
+                <label for="business name ex">貸出レンタル機器照会</label>
+            </div>
+            
+            <div class="form-group">
+                <label for="classification code">分類コード : </label>
+                <label for="classification code ex">34FR58ET76YT</label>
+            </div>
+
+            <div class="form-group">
+                <label for="Equipment subclassification">機器小分類 : </label>
+                <label for="Equipment subclassification ex">87-48-GF-KJ</label>
+            </div>
+            
+            <div class="form-group">
+                <label for="rental equipment number">レンタル機器番号 : </label>
+                <label for="rental equipment number ex">789652</label>
+            </div>
+            
+            <div class="form-group">
+                <label for="rental equipment name">レンタル機器名称 : </label>
+                <label for="rental equipment name ex">Tree Cut Tool</label>
+            </div>
+
+            <div class="form-group">
+                <button type="button" class="btn btn-secondary" onclick="goToRentalEquipmentInquiry()">機器仕様・単価照会</button>
+            </div>
+
+            <div class="form-group">
+                <label for="rental period start date">貸出可能期間開始日</label>
+                <input type="date" class="form-control" id="k-rental-period-start" placeholder="貸出可能期間開始日">
+            </div>
+
+            <div class="form-group">
+                <label for="roan period start date">貸出期間開始日</label>
+                <input type="date" class="form-control" id="k-roan-period-start" placeholder="貸出期間開始日">
+            </div>
+
+            <div class="form-group">
+                <label for="lending period end date">貸出期間終了日</label>
+                <input type="date" class="form-control" id="k-lending-period-end" placeholder="貸出期間終了日">
+            </div>
+
+            <div class="form-group">
+                <label for="rent period unit">貸出期間単位</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="role" id="k-rent-period-unit-day" value="lender">
+                    <label class="form-check-label" for="lender">
+                        日
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="role" id="k-rent-period-unit-week" value="lender">
+                    <label class="form-check-label" for="lender">
+                        週
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="role" id="k-rent-period-unit-month" value="lender">
+                    <label class="form-check-label" for="lender">
+                        月
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="minimum loan period date">最小貸出期間</label>
+                <input type="number" class="form-control" id="k-minimum-loan-period" placeholder="最小貸出期間">
+            </div>
+
+            <div class="form-group">
+                <label for="max lend period date">最大貸出期間</label>
+                <input type="number" class="form-control" id="k-max-lend-period" placeholder="最大貸出期間">
+            </div>
+
+            <div class="form-group">
+                <label for="term loan unit price">期間貸出単価</label>
+                <input type="number" class="form-control" id="k-term-loan-unit-price" placeholder="期間貸出単価">
+            </div>
+
+            <div class="form-group">
+                <label for="period usage unit price">期間利用単価</label>
+                <input type="number" class="form-control" id="k-per-usage-unit-price" placeholder="期間利用単価">
+            </div>
+
+            <div class="form-group">
+                <button type="button" class="btn btn-primary" onclick="goToRegister()">登録</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+
+        function goToRegister(){
+            alert('please input all info!')
+        }
+
+        function goToRentalEquipmentInquiry() {
+          confirm('you wanna leave?')
+        }
+      </script>
+
+    <!-- Bootstrap JS の読み込み -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

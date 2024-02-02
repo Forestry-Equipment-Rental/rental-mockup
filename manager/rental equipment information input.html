@@ -5,8 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>林業機器相互レンタルシステム | レンタル機器情報入力</title>
-  <link rel="stylesheet" href="CSS/index.css">
-  <link rel="shortcut icon" type="image/x-icon" href="images/light-logo.png">
+  <link rel="stylesheet" href="../CSS/index.css">
+  <link rel="shortcut icon" type="image/x-icon" href="../images/light-logo.png">
   <!-- Bootstrap CSS の読み込み -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -25,195 +25,248 @@
       </a>
 
       <div class="text-end">
-        <a href="index.html">
+        <a href="/">
           <button type="button" class="btn btn-outline-primary me-2">Login</button>
         </a>
       </div>
     </header>
     <!-- Header -->
 
-    <div class="main-container">
-      <div style="height: calc(100vh - 300px);">
+    <div class="main-container pb-5 ">
+      <div class="d-flex align-items-center flex-column ">
         <!-- システムのタイトル -->
-        <h1 class="text-center mb-4">林業機器相互レンタルシステム</h1>
-        <h2 class="text-center mb-4">レンタル機器借入条件入力</h2>
+        <h2 class="text-center">レンタル機器借入条件入力</h2>
 
-        <form>
-          <div class="form-group">
-            <label for="business name">貸出事業者名</label>
+        <form class="pt-4 w-75 ">
+          <div class="form-group pt-5 ">
+            <div class="d-flex align-items-center justify-content-between  ">
+              <h5 for="business name">レンタル機器分類</h5>
+              <a class="btn btn-outline-success ">機器分類登録</a>
+            </div>
+            <div class="row pt-2">
+              <div class="col">
+                <h6 for="大分類">大分類</h6>
+                <div class="form-group pl-3">
+                  <label for="start date">コード : </label>
+                  <label for="date">7263FHG</label>
+                  <br />
+                  <label for="end date">名称 : </label>
+                  <label for="date">Tree Cut</label>
+                </div>
+              </div>
+
+              <div class="col">
+                <h6 for="中分類">中分類</h6>
+                <div class="form-group pl-3">
+                  <label for="start date">コード : </label>
+                  <label for="date">7263FHG</label>
+                  <br />
+                  <label for="end date">名称 : </label>
+                  <label for="date">Tree Cut</label>
+                </div>
+              </div>
+
+              <div class="col">
+                <h6 for="小分類">小分類</h6>
+                <div class="form-group pl-3">
+                  <label for="start date">コード : </label>
+                  <label for="date">7263FHG</label>
+                  <br />
+                  <label for="end date">名称 : </label>
+                  <label for="date">Tree Cut</label>
+                </div>
+              </div>
+            </div>
+
           </div>
 
           <div class="form-group">
-            <label for="classification code">借入条件入力 </label>
-            <div class="form-group pl-3">
-              <label for="classification code ex">借入開始日</label>
-              <input type="date" class="form-control" id="k-borrow-start-date" placeholder="借入開始日" />
-              <br />
-              <label for="classification code ex">借入終了日</label>
-              <input type="date" class="form-control" id="k-loadn-end-date" placeholder="借入終了日" />
-              <div class="form-group mt-3">
-                <label for="classification code">借入単位 : </label>
-                <select class="form-select" aria-label="Default select example">
-                  <option value="1">日</option>
-                  <option value="2">週</option>
-                  <option value="3">月</option>
-                </select>
+            <h5 for="レンタル機器の現況登録" class="business name">レンタル機器の現況登録</h5>
+            <div class="form-group pl-3 pt-2">
+              <h6 for="classification code">レンタル機器名称 </h6>
+              <input type="text" class="form-control" id="k-borrow-start-date" placeholder="レンタル機器名称" />
+            </div>
+            <div class="form-group pl-3 pt-2">
+              <h6 for="classification code">機器の状況など </h6>
+              <input type="text" class="form-control" id="k-borrow-start-date" placeholder="機器の状況など" />
+            </div>
+            <div class="form-group pl-3 pt-2">
+              <h6 for="classification code">全長×全幅×全高 </h6>
+              <input type="text" class="form-control" id="k-borrow-start-date" placeholder="全長×全幅×全高" />
+            </div>
+            <div class="form-group pl-3 pt-2">
+              <h6 for="classification code">質量（㎏） </h6>
+              <input type="text" class="form-control" id="k-borrow-start-date" placeholder="質量（㎏）" />
+            </div>
+            <div class="form-group pl-3 pt-2">
+              <label for="rent period unit">走行方法</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" checked name="role" id="k-rent-period-unit-day"
+                  value="lender" />
+                <label class="form-check-label" for="lender"> 履帯 </label>
               </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="role" id="k-rent-period-unit-week" value="lender" />
+                <label class="form-check-label" for="lender">
+                  装輪
+                </label>
+              </div>
+            </div>
+            <div class="form-group pl-3 pt-2">
+              <h6 for="classification code">森林作業道幅員（mm） </h6>
+              <input type="text" class="form-control" id="k-borrow-start-date" placeholder="森林作業道幅員（mm）" />
+            </div>
+            <div class="form-group pl-3 pt-2">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" checked name="draven" id="k-draven" value="draven" />
+                <label class="form-check-label" for="draven"> 公道走行可否 </label>
+              </div>
+            </div>
+            <div class="form-group pl-3 pt-2">
+              <h6 for="classification code">初期登録年月日 </h6>
+              <input type="date" class="form-control" id="k-borrow-start-date" placeholder="初期登録年月日" />
+            </div>
+            <div class="form-group pl-3 pt-2">
+              <h6 for="classification code">登録番号 </h6>
+              <input type="text" class="form-control" id="k-borrow-start-date" placeholder="登録番号" />
+            </div>
+            <div class="form-group pl-3 pt-2">
+              <h6 for="classification code">購入年月日 </h6>
+              <input type="date" class="form-control" id="k-borrow-start-date" placeholder="購入年月日" />
+            </div>
+            <div class="form-group pl-3 pt-2">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" checked name="new" id="k-draven" value="draven" />
+                <label class="form-check-label" for="new"> 新規 </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" checked name="new" id="k-draven" value="draven" />
+                <label class="form-check-label" for="new"> 中古 </label>
+              </div>
+            </div>
+            <div class="form-group pl-3 pt-2">
+              <h6 for="classification code">直近保守年月日 </h6>
+              <input type="date" class="form-control" id="k-borrow-start-date" placeholder="直近保守年月日" />
+            </div>
+            <div class="form-group pl-3 pt-2">
+              <h6 for="classification code">メンテナンス状況 </h6>
+              <input type="text" class="form-control" id="k-borrow-start-date" placeholder="メンテナンス状況" />
+            </div>
+            <div class="form-group pl-3 pt-2">
+              <label for="rent period unit">借入者の保守メンテナンス要否</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" checked name="maintenance_required"
+                  id="k-rent-period-unit-day" value="lender" />
+                <label class="form-check-label" for="lender"> 要 </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="maintenance_required" id="k-rent-period-unit-week"
+                  value="lender" />
+                <label class="form-check-label" for="lender">否</label>
+              </div>
+            </div>
 
-              <div class="form-group">
-                <label for="classification code">借入期間 </label>
-                <input type="number" class="form-control" id="k-borrow-start-date" placeholder="借入期間" />
-              </div>
-
-              <div class="form-group">
-                <label for="classification code">利用料金 </label>
-                <input type="number" class="form-control" id="k-borrow-start-date" placeholder="利用料金" />
-              </div>
-
-              <div class="form-group">
-                <label for="rent period unit">運搬方法</label>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="role" id="k-rent-period-unit-day" value="lender" />
-                  <label class="form-check-label" for="lender"> 自ら手配 </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="role" id="k-rent-period-unit-week"
-                    value="lender" />
-                  <label class="form-check-label" for="lender">
-                    貸出側に依頼
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="role" id="k-rent-period-unit-month"
-                    value="lender" />
-                  <label class="form-check-label" for="lender">
-                    輸送業者に依頼
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="role" id="k-rent-period-unit-month"
-                    value="lender" />
-                  <label class="form-check-label" for="lender">
-                    その他個人に依頼
-                  </label>
+            <div class="form-group pl-3 pt-2">
+              <div class="preview-images-zone">
+                <div class="form-group">
+                  <img src="../assets/1.webp" class="img-thumbnail" alt="...">
+                  <img src="../assets/2.webp" class="img-thumbnail" alt="...">
+                  <img src="../assets/3.webp" class="img-thumbnail" alt="...">
+                  <img src="../assets/4.webp" class="img-thumbnail" alt="...">
+                  <img src="../assets/5.webp" class="img-thumbnail" alt="...">
+                  <img src="../assets/6.webp" class="img-thumbnail" alt="...">
+                  <img src="../assets/7.webp" class="img-thumbnail" alt="...">
+                  <img src="../assets/8.webp" class="img-thumbnail" alt="...">
+                  <img src="../assets/9.webp" class="img-thumbnail" alt="...">
+                  <img src="../assets/10.webp" class="img-thumbnail" alt="...">
                 </div>
               </div>
-              <div class="form-group">
-                <button type="button" class="btn btn-primary">申込</button>
-              </div>
+              <fieldset class="form-group mt-3">
+                <a class="btn btn-outline-success ">アップロード</a>
+                <input type="file" id="pro-image" name="pro-image" style="display: none;" class="form-control" multiple>
+              </fieldset>
             </div>
           </div>
 
-          <div class="form-group">
-            <label for="rental equipment number">レンタル機器の現況</label>
-            <div class="form-group pl-3">
-              <label for="小分類">小分類</label>
-              <div class="form-group pl-3">
-                <label for="start date">コード : </label>
-                <label for="date">7263FHG</label>
-                <br />
-                <label for="end date">名称 : </label>
-                <label for="date">Tree Cut</label>
-              </div>
-              <div class="form-group">
-                <label for="start date">レンタル機器番号 : </label>
-                <label for="date">Tree Cut Tool</label>
-              </div>
-
-              <div class="form-floating">
-                <label for="floatingTextarea2">レンタル機器名称</label>
-                <textarea class="form-control" placeholder="レンタル機器名称" id="floatingTextarea2"
-                  style="height: 100px"></textarea>
-              </div>
-
-              <div class="form-group">
-                <label for="start date">全長 : </label>
-                <label for="date">25</label>
-              </div>
-
-              <div class="form-group">
-                <label for="start date">全幅 : </label>
-                <label for="date">20</label>
-              </div>
-
-              <div class="form-group">
-                <label for="start date">全高 : </label>
-                <label for="date">30</label>
-              </div>
-
-              <div class="form-group">
-                <label for="start date">質量（㎏）: </label>
-                <label for="date">50</label>
-              </div>
-
-              <div class="form-group">
-                <label for="start date">走行方法 : </label>
-                <label for="date">'走行方法'</label>
-              </div>
-
-              <div class="form-group">
-                <label for="start date">森林作業道幅員（mm） : </label>
-                <label for="date">87</label>
-              </div>
-
-              <div class="form-group">
-                <label for="start date">公道走行可否 : </label>
-                <label for="date">Approved</label>
-              </div>
-
-              <div class="form-group">
-                <label for="start date">初期登録年月日 : </label>
-                <label for="date">03/23/2024</label>
-              </div>
-
-              <div class="form-group">
-                <label for="start date">登録番号 : </label>
-                <label for="date">0035</label>
-              </div>
-
-              <div class="form-group">
-                <label for="start date">購入年月日 : </label>
-                <label for="date">03/22/2024</label>
-              </div>
-
-              <div class="form-group">
-                <label for="start date">新規／中古 : </label>
-                <label for="date">新規</label>
-              </div>
-
-              <div class="form-group">
-                <label for="start date">直近保守年月日 : </label>
-                <label for="date">02/04/2024</label>
-              </div>
-
-              <div class="form-group">
-                <label for="start date">メンテナンス状況 : </label>
-                <label for="date">Pending</label>
-              </div>
-
-              <div class="form-group">
-                <label for="start date">借入者の保守メンテナンス要否 : </label>
-                <label for="date">Busy</label>
-              </div>
-
-              <div class="form-group">
-                <label for="start date">機器写真</label>
-                <div class="form-group">
-                  <img src="./assets/1.webp" class="img-thumbnail" alt="...">
-                  <img src="./assets/2.webp" class="img-thumbnail" alt="...">
-                  <img src="./assets/3.webp" class="img-thumbnail" alt="...">
-                  <img src="./assets/4.webp" class="img-thumbnail" alt="...">
-                  <img src="./assets/5.webp" class="img-thumbnail" alt="...">
-                  <img src="./assets/6.webp" class="img-thumbnail" alt="...">
-                  <img src="./assets/7.webp" class="img-thumbnail" alt="...">
-                  <img src="./assets/8.webp" class="img-thumbnail" alt="...">
-                  <img src="./assets/9.webp" class="img-thumbnail" alt="...">
-                  <img src="./assets/10.webp" class="img-thumbnail" alt="...">
+          <div class="form-group pt-3 ">
+            <h5 for="対象林業機器仕様登録" class="business name">対象林業機器仕様登録</h5>
+            <div class="form-group pl-3 pt-2">
+              <h6 for="classification code">機器仕様 </h6>
+              <div class="pl-3 pt-2">
+                <div class="form-group pl-2">
+                  <label for="start date">機器メーカー : </label>
+                  <label for="date">7263FHG</label>
+                  <br>
+                  <label for="start date">機器名 : </label>
+                  <label for="date">7263FHG</label>
+                  <br>
+                  <a class="btn btn-outline-success ">機器メーカー検索</a>
+                  <a class="btn btn-outline-success ml-2 ">登録機器一覧</a>
+                  <a class="btn btn-outline-success ml-2 ">機器仕様</a>
                 </div>
               </div>
-              <div class="form-group">
-                <button type="button" class="btn btn-primary">機器詳細仕様</button>
+            </div>
+
+            <div class="form-group pl-3 pt-2">
+              <h6 for="classification code">ベースマシン（ＢＭ）</h6>
+              <div class="pl-3 pt-2">
+                <div class="form-group pl-2">
+                  <label for="start date">ＢＭメーカー : </label>
+                  <label for="date">7263FHG</label>
+                  <br>
+                  <label for="start date">ＢＭ機器 : </label>
+                  <label for="date">7263FHG</label>
+                  <br>
+                  <a class="btn btn-outline-success ">ＢＭメーカー検索</a>
+                  <a class="btn btn-outline-success ml-2 ">登録機器一覧</a>
+                  <a class="btn btn-outline-success ml-2 ">ＢＭ仕様</a>
+                </div>
               </div>
+            </div>
+
+            <div class="form-group pl-3 pt-2">
+              <h6 for="classification code">アタッチメント(1)登録</h6>
+              <div class="pl-3 pt-2">
+                <div class="form-group pl-2">
+                  <label for="start date">機器分類 : </label>
+                  <label for="date">7263FHG</label>
+                  <br>
+                  <label for="start date">機器メーカー : </label>
+                  <label for="date">7263FHG</label>
+                  <br>
+                  <label for="start date">機器名 : </label>
+                  <label for="date">7263FHG</label>
+                  <br>
+                  <a class="btn btn-outline-success ">機器分類検索</a>
+                  <a class="btn btn-outline-success ml-2 ">機器メーカー検索</a>
+                  <a class="btn btn-outline-success ml-2 ">登録機器一覧</a>
+                  <a class="btn btn-outline-success ml-2 ">機器仕様</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group pl-3 pt-2">
+              <h6 for="classification code">アタッチメント(2)登録</h6>
+              <div class="pl-3 pt-2">
+                <div class="form-group pl-2">
+                  <label for="start date">機器分類 : </label>
+                  <label for="date">7263FHG</label>
+                  <br>
+                  <label for="start date">機器メーカー : </label>
+                  <label for="date">7263FHG</label>
+                  <br>
+                  <label for="start date">機器名 : </label>
+                  <label for="date">7263FHG</label>
+                  <br>
+                  <a class="btn btn-outline-success ">機器分類検索</a>
+                  <a class="btn btn-outline-success ml-2 ">機器メーカー検索</a>
+                  <a class="btn btn-outline-success ml-2 ">登録機器一覧</a>
+                  <a class="btn btn-outline-success ml-2 ">機器仕様</a>
+                </div>
+              </div>
+            </div>
+            <div class="form-group pl-3 pt-2">
+              <a class="btn btn-outline-success ml-2 ">レンタル機器登録</a>
             </div>
           </div>
 
@@ -241,16 +294,11 @@
     <!-- Footer -->
   </div>
 
-  <script>
-    function goToRentalEquipmentInquiry() {
-      confirm("you wanna leave?");
-    }
-  </script>
-
   <!-- Bootstrap JS の読み込み -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>

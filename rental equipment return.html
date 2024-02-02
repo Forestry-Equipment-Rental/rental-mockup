@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>林業機器相互レンタルシステム | レンタル機器返却</title>
+    <!-- Bootstrap CSS の読み込み -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <!-- システムのタイトル -->
+      <h1 class="text-center mb-4">林業機器相互レンタルシステム</h1>
+      <h2 class="text-center mb-4">レンタル機器返却</h2>
+
+      <form>
+        <div class="form-group">
+          <label for="business name">事業者名 : </label>
+          <label for="business name">レンタル機器返却</label>
+        </div>
+        <div class="form-group">
+          <label for="business name">機器小分類 : </label>
+          <label for="business name">GH02KJ76</label>
+        </div>
+        <div class="form-group">
+          <label for="business name">レンタル機器番号 : </label>
+          <label for="business name">028704</label>
+        </div>
+        <div class="form-group">
+          <label for="business name">機器名称 : </label>
+          <label for="business name">ツリーカットツール</label>
+        </div>
+
+        <div class="form-group">
+          <label for="business name">レンタル機器受領日 : </label>
+          <input
+            class="form-control"
+            type="date"
+            name="role"
+            id="k-rent-period-unit-day"
+            value="lender"
+          />
+        </div>
+        <div class="form-group">
+          <label for="business name">貸出開始日 : </label>
+          <label for="business name">02/01/2024</label>
+        </div>
+        <div class="form-group">
+          <label for="business name">貸出終了日 : </label>
+          <label for="business name">04/01/2024</label>
+        </div>
+        <div class="form-group">
+          <label for="business name">レンタル機器引渡日 : </label>
+          <label for="business name">03/02/2024</label>
+        </div>
+        <div class="form-group">
+          <label for="business name">レンタル機器受領日 : </label>
+          <label for="business name">03/02/2024</label>
+        </div>
+        <div class="form-group">
+          <label for="business name">貸出者の評価 : </label>
+          <select class="form-select" aria-label="Default select example">
+            <option value="1">非常に良い</option>
+            <option value="2">良い</option>
+            <option value="3">普通</option>
+            <option value="4">悪い</option>
+            <option value="5">非常に悪い</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="business name">レンタル機器の評価 : </label>
+          <select class="form-select" aria-label="Default select example">
+            <option value="1">非常に良い</option>
+            <option value="2">良い</option>
+            <option value="3">普通</option>
+            <option value="4">悪い</option>
+            <option value="5">非常に悪い</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <div class="form-floating">
+            <label for="floatingTextarea2"
+              >今回レンタルしたことに対するコメント</label
+            >
+            <textarea
+              class="form-control"
+              placeholder="今回レンタルしたことに対するコメント"
+              id="floatingTextarea2"
+              style="height: 100px"
+            ></textarea>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- Bootstrap JS の読み込み -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

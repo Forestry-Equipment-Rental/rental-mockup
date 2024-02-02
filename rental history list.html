@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>林業機器相互レンタルシステム | レンタル履歴一覧</title>
+    <!-- Bootstrap CSS の読み込み -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <!-- システムのタイトル -->
+      <h1 class="text-center mb-4">林業機器相互レンタルシステム</h1>
+      <h2 class="text-center mb-4">レンタル履歴一覧</h2>
+
+      <form>
+        <div class="form-group">
+          <label for="business name">事業者名 : </label>
+          <label for="business name">レンタル履歴一覧</label>
+        </div>
+
+        <div class="form-group">
+          <label for="classification code">表示期間 </label>
+          <div class="form-group pl-3">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="role"
+                id="k-rent-period-unit-day"
+                value="lender"
+              />
+              <label class="form-check-label" for="lender"> すべて </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="role"
+                id="k-rent-period-unit-week"
+                value="lender"
+              />
+              <label class="form-check-label" for="lender"> 今年度 </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="role"
+                id="k-rent-period-unit-month"
+                value="lender"
+              />
+              <label class="form-check-label" for="lender"> 前年度 </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="role"
+                id="k-rent-period-unit-month"
+                value="lender"
+              />
+              <label class="form-check-label" for="lender"> 指定期間 </label>
+              <div class="form-group">
+                <input
+                  type="date"
+                  class="form-control mt-2"
+                  id="k-borrow-start-date"
+                  placeholder="from"
+                />
+                <input
+                  type="date"
+                  class="form-control mt-2"
+                  id="k-borrow-start-date"
+                  placeholder="to"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="rental equipment number">レンタル履歴</label>
+          <div class="form-group pl-3">
+            <label for="レンタル期間">レンタル期間</label>
+            <div class="form-group pl-3">
+              <label for="start date">開始日 : </label>
+              <input
+                type="date"
+                class="form-control mt-2"
+                id="k-borrow-start-date"
+                placeholder="from"
+              />
+              <br />
+              <label for="start date">終了日 : </label>
+              <input
+                type="date"
+                class="form-control mt-2"
+                id="k-borrow-start-date"
+                placeholder="from"
+              />
+            </div>
+            <div class="form-group">
+              <label for="start date">レンタル機器番号 : </label>
+              <label for="date">Tree Cut Tool</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="rental equipment number">レンタル機器番号 : </label>
+          <label for="rental equipment number">083644</label>
+        </div>
+        <div class="form-group">
+          <label for="rental equipment number">機器名称 : </label>
+          <label for="rental equipment number">レンタル履歴一覧</label>
+        </div>
+        <div class="form-group">
+          <label for="rental equipment number">レンタル期間 : </label>
+          <label for="rental equipment number">03/02/2024</label>
+        </div>
+        <div class="form-group">
+          <label for="rental equipment number">レンタル料金 : </label>
+          <label for="rental equipment number">76</label>
+        </div>
+        <div class="form-group">
+          <label for="rental equipment number">受渡状況 : </label>
+          <div class="form-group">
+            <label for="rental equipment number">機器貸出日 : </label>
+            <label for="rental equipment number">02/02/2024</label>
+          </div>
+          <div class="form-group">
+            <label for="rental equipment number">機器受領日 : </label>
+            <label for="rental equipment number">02/02/2024</label>
+          </div>
+          <div class="form-group">
+            <label for="rental equipment number">機器返却日 : </label>
+            <label for="rental equipment number">02/02/2024</label>
+          </div>
+          <div class="form-group">
+            <label for="rental equipment number">返却受領日 : </label>
+            <label for="rental equipment number">02/02/2024</label>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- Bootstrap JS の読み込み -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

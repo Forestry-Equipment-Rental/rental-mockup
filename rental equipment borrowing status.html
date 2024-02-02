@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>林業機器相互レンタルシステム | レンタル機器借入状況</title>
+    <!-- Bootstrap CSS の読み込み -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <!-- システムのタイトル -->
+      <h1 class="text-center mb-4">林業機器相互レンタルシステム</h1>
+      <h2 class="text-center mb-4">レンタル機器借入状況</h2>
+
+      <form>
+        <div class="form-group">
+          <label for="business name">事業者名 : </label>
+          <label for="business name">レンタル機器借入状況</label>
+        </div>
+
+        <div class="form-group">
+          <label for="business name">事業者名 : </label>
+          <div class="form-group pl-3">
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox1"
+                value="option1"
+              />
+              <label class="form-check-label" for="inlineCheckbox1"
+                >借入予定</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox2"
+                value="option2"
+              />
+              <label class="form-check-label" for="inlineCheckbox2"
+                >借入中</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox3"
+                value="option3"
+              />
+              <label class="form-check-label" for="inlineCheckbox3"
+                >返却済
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="classification code">借入状況 </label>
+          <div class="form-group pl-3">
+            <div class="form-group">
+              <label for="借入期間">借入期間</label>
+              <div class="form-group pl-3">
+                <label for="開始日">開始日</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="k-loadn-end-date"
+                  placeholder="開始日"
+                />
+                <br />
+                <label for="終了日">終了日</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="k-loadn-end-date"
+                  placeholder="終了日"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="...">レンタル機器番号 :</label>
+              <label for="...">026453</label>
+            </div>
+            <div class="form-group">
+              <label for="...">機器名称 :</label>
+              <label for="...">Tree Cut Tool</label>
+            </div>
+            <div class="form-group">
+              <label for="...">貸出事業者 :</label>
+              <label for="...">Forestry Rental Company</label>
+            </div>
+            <div class="form-group">
+              <label for="...">借入期間 :</label>
+              <label for="...">02/01/2024 ~ 04/01/2024</label>
+            </div>
+            <div class="form-group">
+              <label for="...">機器貸出日 :</label>
+              <label for="...">02/01/2024</label>
+            </div>
+            <div class="form-group">
+              <label for="...">機器受領日 :</label>
+              <label for="...">02/04/2024</label>
+            </div>
+            <div class="form-group">
+              <label for="...">機器返却日 :</label>
+              <label for="...">03/04/2024</label>
+            </div>
+            <div class="form-group">
+              <label for="...">返却受領日 :</label>
+              <label for="...">03/04/2024</label>
+            </div>
+            <div class="form-group">
+              <label for="...">レンタル料金 :</label>
+              <label for="...">7%</label>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- Bootstrap JS の読み込み -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

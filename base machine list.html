@@ -68,10 +68,10 @@
         <!-- システムのタイトル -->
 
         <!-- ログインフォーム -->
-        <form>
+        <form class="w-100">
           <!-- ID入力フィールド -->
           <div class="form-group">
-            <label for="userId">一覧表示項目</label>
+            <!--label for="userId">一覧表示項目</label>
             <div class="form-check">
               <input
                 class="form-check-input"
@@ -126,7 +126,57 @@
               <label class="form-check-label" for="flexRadioDefault2">
                 適用クラス（ｔ）
               </label>
+            </div-->
+
+            <h3>一覧表示項目</h3>
+            <div class="form-group pl-3">
+              <div class="form-group mt-3 ">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="flexRadioDefault2"
+                />
+                <label for="userId">機器型式</label>
+              </div>
+              <div class="form-group">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="flexRadioDefault2"
+                />
+                <label for="userId">枝番</label>
+              </div>
+              <div class="form-group">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="flexRadioDefault2"
+                />
+                <label for="userId">機器通称</label>
+              </div>
+              <div class="form-group">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="flexRadioDefault2"
+                />
+                <label for="userId">適用クラス（m3）</label>
+              </div>
+              <div class="form-group">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="flexRadioDefault2"
+                />
+                <label for="userId">適用クラス（ｔ）</label>
+              </div>
             </div>
+
           </div>
           <!-- button type="button" class="btn btn-primary me-2">
             提出する

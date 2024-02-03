@@ -55,10 +55,10 @@
         <div class="form-group d-flex w-100">
           <h3 class="text-left mb-4 align-items-start flex-grow-1">事業者名 : GH09KJ</h3>
           <div class="form-group d-flex gap-3">
-            <button type="button" class="btn btn-secondary">
+            <button type="button" class="btn btn-secondary" onclick="goToAvailableLoanPeriod()">
               貸出可能期間登録
             </button>
-            <button type="button" onclick="goToNext()" class="btn btn-primary ">
+            <button type="button" onclick="goToRentalQuipmentInquiry()" class="btn btn-primary ">
               貸出状況確認
             </button>
           </div>
@@ -173,7 +173,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <script>
-      function goToNext() {
+      function goToAvailableLoanPeriod() {
+        window.location.href = "register available load period.html";
+      }
+      function goToRentalQuipmentInquiry() {
         window.location.href = "rental quipment inquiry.html";
       }
     </script>

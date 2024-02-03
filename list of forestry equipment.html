@@ -58,32 +58,32 @@
         <form class="w-100">
           <div class="form-group d-flex gap-3 justify-content-between">
             <div class="form-group">
+              <label for="userId">機器大分類 : </label>
+              <label for="userId">87GH65KL</label>
+            </div>
+
+            <div class="form-group">
+              <label for="userId">機器中分類 : </label>
+              <label for="userId">87GH65KL</label>
+            </div>
+
+            <div class="form-group">
               <label for="userId">機器小分類 : </label>
               <label for="userId">87GH65KL</label>
             </div>
 
             <div class="form-group">
-              <label for="userId">メーカー略称 : </label>
+              <label for="userId">メーカー名 : </label>
               <label for="userId">87GH65KL</label>
             </div>
 
             <div class="form-group">
-              <label for="userId">機器型式 : </label>
+              <label for="userId">　　　略称 : </label>
               <label for="userId">87GH65KL</label>
             </div>
 
             <div class="form-group">
-              <label for="userId">枝番 : </label>
-              <label for="userId">87GH65KL</label>
-            </div>
-
-            <div class="form-group">
-              <label for="userId">機器通称 : </label>
-              <label for="userId">87GH65KL</label>
-            </div>
-
-            <div class="form-group">
-              <button type="button" class="btn btn-primary me-2">
+              <button type="button" class="btn btn-primary me-2" onclick="goToEquipmentSpecificationItems()">
                 仕様確認
               </button>
             </div>
@@ -91,7 +91,7 @@
 
           <!-- ID入力フィールド -->
           <div class="form-group">
-            <h3>仕様項目一覧</h3>
+            <h3>一覧表示項目</h3>
             <div class="form-group pl-3 mt-3">
               <div class="form-check">
                 <input
@@ -205,6 +205,9 @@
         } else {
           alert("機能選択は未実装です。");
         }
+      }
+      function goToEquipmentSpecificationItems() {
+        window.location.href = "forestry equipment specification items.html";
       }
     </script>
   </body>

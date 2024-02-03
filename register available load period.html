@@ -82,25 +82,27 @@
                 <input type="date" class="form-control" id="k-lending-period-end" placeholder="貸出期間終了日">
             </div>
 
-            <div class="form-group">
+            <div class="form-group" style="display: flex; flex-direction: column;">
                 <label for="rent period unit">貸出期間単位</label>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="role" id="k-rent-period-unit-day" value="lender">
-                    <label class="form-check-label" for="lender">
-                        日
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="role" id="k-rent-period-unit-week" value="lender">
-                    <label class="form-check-label" for="lender">
-                        週
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="role" id="k-rent-period-unit-month" value="lender">
-                    <label class="form-check-label" for="lender">
-                        月
-                    </label>
+                <div style="display: flex;">
+                    <div class="form-check"  style="width: 5%;">
+                        <input class="form-check-input" type="radio" name="role" id="k-rent-period-unit-day" value="lender">
+                        <label class="form-check-label" for="lender">
+                            日
+                        </label>
+                    </div>
+                    <div class="form-check"  style="width: 5%;">
+                        <input class="form-check-input" type="radio" name="role" id="k-rent-period-unit-week" value="lender">
+                        <label class="form-check-label" for="lender">
+                            週
+                        </label>
+                    </div>
+                    <div class="form-check"  style="width: 5%;">
+                        <input class="form-check-input" type="radio" name="role" id="k-rent-period-unit-month" value="lender">
+                        <label class="form-check-label" for="lender">
+                            月
+                        </label>
+                    </div>
                 </div>
             </div>
 
@@ -152,11 +154,11 @@
     <script>
 
         function goToRegister(){
-            alert('please input all info!')
+            alert('登録しました。')
         }
 
         function goToRentalEquipmentInquiry() {
-          confirm('you wanna leave?')
+          window.location.href = "manager/rental equipment inquiry.html";
         }
       </script>
 

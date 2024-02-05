@@ -1,92 +1,90 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>林業機器相互レンタルシステム | レンタル機器返却受領</title>
-    <!-- Bootstrap CSS の読み込み -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="CSS/index.css">
-    <link rel="shortcut icon" type="image/x-icon" href="images/light-logo.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  </head>
-  <body>
-    
-    <div class="container">
-      <header
-        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-1 border-bottom"
-      >
-        <a
-          href="/"
-          class="d-flex align-items-center text-dark text-decoration-none justify-content-center"
-        >
-          <img src="images/light-logo.png" width="70px" />
-          <h2 class="text-center ml-3 mb-0">林業機器相互レンタルシステム</h2>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>林業機器相互レンタルシステム | レンタル機器返却受領</title>
+  <!-- Bootstrap CSS の読み込み -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="CSS/index.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/light-logo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <header
+      class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-1 border-bottom">
+      <a href="/" class="d-flex align-items-center text-dark text-decoration-none justify-content-center">
+        <img src="images/light-logo.png" width="70px" />
+        <h2 class="text-center ml-3 mb-0">林業機器相互レンタルシステム</h2>
+      </a>
+
+      <div class="text-end">
+        <a href="index.html">
+          <button type="button" class="btn btn-outline-primary me-2">
+            Login
+          </button>
         </a>
-  
-        <div class="text-end">
-          <a href="index.html">
-            <button type="button" class="btn btn-outline-primary me-2">
-              Login
-            </button>
-          </a>
-        </div>
-      </header>
-      <!-- システムのタイトル -->
-      <h2 class="text-center my-4">レンタル機器返却受領</h2>
+      </div>
+    </header>
+
+    <div class="main-container">
+      <h2 class="text-center mb-5 ">レンタル機器返却受領</h2>
 
       <form>
-        <div class="form-group">
-          <label for="business name">事業者名 : </label>
-          <label for="business name">レンタル機器返却受領</label>
-        </div>
-        <div class="form-group">
-          <label for="business name">機器小分類 : </label>
-          <label for="business name">GH02KJ76</label>
-        </div>
-        <div class="form-group">
-          <label for="business name">レンタル機器返却受領 : </label>
-          <label for="business name">028704</label>
-        </div>
-        <div class="form-group">
-          <label for="business name">機器名称 : </label>
-          <label for="business name">ツリーカットツール</label>
+        <div class="d-flex align-items-center  justify-content-between ">
+          <div class="form-group">
+            <h6 for="business name">事業者名</h6>
+            <label for="business name">レンタル機器返却受領</label>
+          </div>
+          <div class="form-group">
+            <h6 for="business name">機器小分類</h6>
+            <label for="business name">GH02KJ76</label>
+          </div>
+          <div class="form-group">
+            <h6 for="business name">レンタル機器返却受領</h6>
+            <label for="business name">028704</label>
+          </div>
+          <div class="form-group">
+            <h6 for="business name">機器名称</h6>
+            <label for="business name">ツリーカットツール</label>
+          </div>
         </div>
 
         <div class="form-group">
-          <label for="business name">レンタル機器受領日 : </label>
-          <input
-            class="form-control"
-            type="date"
-            name="role"
-            id="k-rent-period-unit-day"
-            value="lender"
-          />
+          <h6 for="business name">レンタル機器受領日</h6>
+          <input class="form-control" type="date" name="role" id="k-rent-period-unit-day" value="lender" />
+        </div>
+
+        <div class="d-flex align-items-center  justify-content-between pt-3 ">
+          <div class="form-group">
+            <h6 for="business name">貸出開始日</h6>
+            <label for="business name">02/01/2024</label>
+          </div>
+          <div class="form-group">
+            <h6 for="business name">貸出終了日</h6>
+            <label for="business name">04/01/2024</label>
+          </div>
+          <div class="form-group">
+            <h6 for="business name">レンタル機器引渡日</h6>
+            <label for="business name">03/02/2024</label>
+          </div>
+          <div class="form-group">
+            <h6 for="business name">レンタル機器受領日</h6>
+            <label for="business name">03/02/2024</label>
+          </div>
+          <div class="form-group">
+            <h6 for="business name">レンタル機器返却日</h6>
+            <label for="business name">03/02/2024</label>
+          </div>
         </div>
         <div class="form-group">
-          <label for="business name">貸出開始日 : </label>
-          <label for="business name">02/01/2024</label>
-        </div>
-        <div class="form-group">
-          <label for="business name">貸出終了日 : </label>
-          <label for="business name">04/01/2024</label>
-        </div>
-        <div class="form-group">
-          <label for="business name">レンタル機器引渡日 : </label>
-          <label for="business name">03/02/2024</label>
-        </div>
-        <div class="form-group">
-          <label for="business name">レンタル機器受領日 : </label>
-          <label for="business name">03/02/2024</label>
-        </div>
-        <div class="form-group">
-          <label for="business name">レンタル機器返却日 : </label>
-          <label for="business name">03/02/2024</label>
-        </div>
-        <div class="form-group">
-          <label for="business name">利用者の評価 : </label>
+          <h6 for="business name">利用者の評価</h6>
           <select class="form-select" aria-label="Default select example">
             <option value="1">非常に良い</option>
             <option value="2">良い</option>
@@ -96,39 +94,43 @@
           </select>
         </div>
         <div class="form-group">
-          <label for="floatingTextarea2">今回のレンタル事案に対するコメント</label>
-          <textarea
-            class="form-control"
-            placeholder="今回のレンタル事案に対するコメント"
-            id="floatingTextarea2"
-            style="height: 100px"
-          ></textarea>
+          <h6 for="floatingTextarea2">今回のレンタル事案に対するコメント</h6>
+          <textarea class="form-control" placeholder="今回のレンタル事案に対するコメント" id="floatingTextarea2"
+            style="height: 100px"></textarea>
         </div>
+        <a href="manager/rental%20equipment%20information%20input.html">
+          <button type="button" class="btn btn-outline-primary me-2 mt-4 px-5 ">
+            Submit
+          </button>
+        </a>
       </form>
+    </div>
+    <!-- システムのタイトル -->
 
-      <!-- Footer -->
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
-        <div class="col-md-4 d-flex align-items-center">
-            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-                <svg class="bi" width="30" height="24">
-                    <use xlink:href="#bootstrap"></use>
-                </svg>
-            </a>
-            <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Company, Inc</span>
-        </div>
+    <!-- Footer -->
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Company, Inc</span>
+      </div>
 
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-            <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-twitter"></i></a></li>
-            <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-instagram"></i></a></li>
-            <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-facebook"></i></a></li>
-        </ul>
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-twitter"></i></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-instagram"></i></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-facebook"></i></a></li>
+      </ul>
     </footer>
     <!-- Footer -->
-    </div>
+  </div>
 
-    <!-- Bootstrap JS の読み込み -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  </body>
+  <!-- Bootstrap JS の読み込み -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
 </html>

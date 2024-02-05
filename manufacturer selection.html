@@ -1,206 +1,155 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>林業機器相互レンタルシステム | メーカー選択</title>
-    <!-- Bootstrap CSS の読み込み -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="CSS/index.css" />
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="images/light-logo.png"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
-    />
-  </head>
 
-  <body>
-    <div class="container">
-      <!-- Header -->
-      <header
-        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-1 border-bottom"
-      >
-        <a
-          href="/"
-          class="d-flex align-items-center text-dark text-decoration-none justify-content-center"
-        >
-          <img src="images/light-logo.png" width="70px" />
-          <h2 class="text-center ml-3 mb-0">林業機器相互レンタルシステム</h2>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>林業機器相互レンタルシステム | メーカー選択</title>
+  <!-- Bootstrap CSS の読み込み -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="CSS/index.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="images/light-logo.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+</head>
+
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header
+      class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-1 border-bottom">
+      <a href="/" class="d-flex align-items-center text-dark text-decoration-none justify-content-center">
+        <img src="images/light-logo.png" width="70px" />
+        <h2 class="text-center ml-3 mb-0">林業機器相互レンタルシステム</h2>
+      </a>
+
+      <div class="text-end">
+        <a href="index.html">
+          <button type="button" class="btn btn-outline-primary me-2">
+            Login
+          </button>
         </a>
+      </div>
+    </header>
+    <!-- Header -->
 
-        <div class="text-end">
-          <a href="index.html">
-            <button type="button" class="btn btn-outline-primary me-2">
-              Login
-            </button>
-          </a>
-        </div>
-      </header>
-      <!-- Header -->
+    <div class="main-container d-flex align-items-center flex-column">
+      <!-- システムのタイトル -->
 
-      <div class="main-container d-flex align-items-center flex-column">
-        <!-- システムのタイトル -->
-
-        <!-- ログインフォーム -->
-        <form class="w-100">
-          <!-- ID入力フィールド -->
-          <div class="form-group">
-            <div class="form-group mt-3">
-              <div class="form-group">
-                <label>メーカー名検索</label>
-                <div class="form-group d-flex gap-3">
-                  <input
-                    type="text"
-                    class="form-control w-50"
-                    id="userId"
-                    placeholder="ユーザーIDを入力"
-                  />
-                  <div class="form-group">
-                    <button type="button" class="btn btn-primary">
-                      検索
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group">
-                <label>メーカーコード : </label>
-                <label>76GH85JK</label>
-              </div>
-              <div class="form-group">
-                <label>メーカー名称 : </label>
-                <label>76GH85JK</label>
-              </div>
-              <div class="form-group">
-                <label>メーカー略称 : </label>
-                <label>76GH85JK</label>
-              </div>
-              <div class="form-group">
-                <label>メーカー名(かな) : </label>
-                <label>76GH85JK</label>
-              </div>
-              <div class="form-group">
-                <button type="button" class="btn btn-primary">選択</button>
-              </div>
-              <div class="form-group">
-                <label>一覧表示項目</label>
-                <div class="form-group pl-3">
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="flexRadioDefault"
-                      id="flexRadioDefault2"
-                    />
-                    <label class="form-check-label" for="flexRadioDefault2">
-                      メーカーコード
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="flexRadioDefault"
-                      id="flexRadioDefault2"
-                    />
-                    <label class="form-check-label" for="flexRadioDefault2">
-                      メーカー名称
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="flexRadioDefault"
-                      id="flexRadioDefault2"
-                    />
-                    <label class="form-check-label" for="flexRadioDefault2">
-                      メーカー略称
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="flexRadioDefault"
-                      id="flexRadioDefault2"
-                    />
-                    <label class="form-check-label" for="flexRadioDefault2">
-                      ふりがな
-                    </label>
-                  </div>
+      <!-- ログインフォーム -->
+      <form class="w-100">
+        <!-- ID入力フィールド -->
+        <div class="form-group">
+          <div class="form-group mt-3">
+            <div class="form-group">
+              <label>メーカー名検索</label>
+              <div class="form-group d-flex gap-3">
+                <input type="text" class="form-control w-50" id="userId" placeholder="ユーザーIDを入力" />
+                <div class="form-group">
+                  <button type="button" class="btn btn-primary">
+                    検索
+                  </button>
                 </div>
               </div>
             </div>
-          </div>
-        </form>
-      </div>
 
-      <!-- Footer -->
-      <footer
-        class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top"
-      >
-        <div class="col-md-4 d-flex align-items-center">
-          <a
-            href="/"
-            class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
-          >
-            <svg class="bi" width="30" height="24">
-              <use xlink:href="#bootstrap"></use>
-            </svg>
-          </a>
-          <span class="mb-3 mb-md-0 text-body-secondary"
-            >© 2023 Company, Inc</span
-          >
+            <div class="d-flex align-items-center justify-content-between ">
+              <div class="d-flex align-items-center ">
+                <div class="form-group">
+                  <label>メーカーコード : </label>
+                  <label>76GH85JK</label>
+                </div>
+                <div class="form-group ml-5">
+                  <label>メーカー名称 : </label>
+                  <label>76GH85JK</label>
+                </div>
+                <div class="form-group ml-5">
+                  <label>メーカー略称 : </label>
+                  <label>76GH85JK</label>
+                </div>
+                <div class="form-group ml-5">
+                  <label>メーカー名(かな) : </label>
+                  <label>76GH85JK</label>
+                </div>
+              </div>
+              <div class="form-group  ml-5">
+                <button type="button" class="btn btn-primary px-4">選択</button>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>一覧表示項目</label>
+              <div class="form-group pt-3">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">メーカーコード</th>
+                      <th scope="col">メーカー名称</th>
+                      <th scope="col">メーカー略称</th>
+                      <th scope="col">ふりがな</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>76GH85JK</td>
+                      <td>76GH85JK</td>
+                      <td>76GH85JK</td>
+                      <td>76GH85JK</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3">
-            <a class="text-body-secondary" href="#"
-              ><i class="bi bi-twitter"></i
-            ></a>
-          </li>
-          <li class="ms-3">
-            <a class="text-body-secondary" href="#"
-              ><i class="bi bi-instagram"></i
-            ></a>
-          </li>
-          <li class="ms-3">
-            <a class="text-body-secondary" href="#"
-              ><i class="bi bi-facebook"></i
-            ></a>
-          </li>
-        </ul>
-      </footer>
-      <!-- Footer -->
+      </form>
     </div>
-    <!-- Bootstrap JS の読み込み -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <script>
-      function goToMain() {
-        if (document.getElementById("lender").checked) {
-          window.location.href = "manager/manager.html";
-        } else if (document.getElementById("borrower").checked) {
-          window.location.href = "user.html";
-        } else {
-          alert("機能選択は未実装です。");
-        }
+    <!-- Footer -->
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Company, Inc</span>
+      </div>
+
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3">
+          <a class="text-body-secondary" href="#"><i class="bi bi-twitter"></i></a>
+        </li>
+        <li class="ms-3">
+          <a class="text-body-secondary" href="#"><i class="bi bi-instagram"></i></a>
+        </li>
+        <li class="ms-3">
+          <a class="text-body-secondary" href="#"><i class="bi bi-facebook"></i></a>
+        </li>
+      </ul>
+    </footer>
+    <!-- Footer -->
+  </div>
+  <!-- Bootstrap JS の読み込み -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    function goToMain() {
+      if (document.getElementById("lender").checked) {
+        window.location.href = "manager/manager.html";
+      } else if (document.getElementById("borrower").checked) {
+        window.location.href = "user.html";
+      } else {
+        alert("機能選択は未実装です。");
       }
-    </script>
-  </body>
+    }
+  </script>
+</body>
+
 </html>

@@ -69,7 +69,7 @@
 
                 <div class="justify-content-center">
                     <!-- ログインボタン -->
-                    <button type="button" class="btn btn-primary" onclick="goToMain()">ログイン</button>
+                    <button type="button" class="btn btn-primary" onclick="login()">ログイン</button>
 
                     <!-- 機能選択ボタン（ダミー） -->
                     <!-- <button type="button" class="btn btn-secondary" onclick="goToMain()">機能選択</button> -->
@@ -100,18 +100,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <script>
-        function goToMain() {
-            if (document.getElementById('lender').checked) {
-                window.location.href = 'manager/manager.html';
-            } else if (document.getElementById('borrower').checked) {
-                window.location.href = 'user.html';
-            } else {
-                alert('機能選択は未実装です。')
-            }
-        }
-    </script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
